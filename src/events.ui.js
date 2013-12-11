@@ -14,17 +14,17 @@ annotorious.events.ui.hasMouse = !annotorious.events.ui.hasTouch; // Just for re
  */
 annotorious.events.ui.EventType = {
 
-  DOWN:  (annotorious.events.ui.hasTouch) ? goog.events.EventType.TOUCHSTART : goog.events.EventType.MOUSEDOWN,
+  DOWN:  goog.events.EventType.MOUSEDOWN,
 
-  OVER:  (annotorious.events.ui.hasTouch) ? "touchenter" : goog.events.EventType.MOUSEOVER,
+  OVER:  goog.events.EventType.MOUSEOVER,
 
-  MOVE:  (annotorious.events.ui.hasTouch) ? goog.events.EventType.TOUCHMOVE : goog.events.EventType.MOUSEMOVE,
+  MOVE:  goog.events.EventType.MOUSEMOVE,
 
-  UP:    (annotorious.events.ui.hasTouch) ? goog.events.EventType.TOUCHEND : goog.events.EventType.MOUSEUP,
+  UP:    goog.events.EventType.MOUSEUP,
 
-  OUT:   (annotorious.events.ui.hasTouch) ? "touchleave" : goog.events.EventType.MOUSEOUT,
+  OUT:   goog.events.EventType.MOUSEOUT,
 
-  CLICK: (annotorious.events.ui.hasTouch) ? goog.events.EventType.TOUCHEND : goog.events.EventType.CLICK
+  CLICK: goog.events.EventType.CLICK
 
 }
 
